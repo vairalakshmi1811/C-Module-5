@@ -15,8 +15,29 @@ To write a C program to calculate the product (factorial) of a given natural num
    - **Print** the result.
 
 ## Program
-Add code here
+```
+#include <stdio.h>
+int find_factorial(int n) {
+    if(n == 0) {
+        return 1; 
+    } else {
+        return n * find_factorial(n - 1);
+    }
+}
+
+int main() {
+    int num, fact;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    fact = find_factorial(num);
+    printf("Factorial = %d\n", fact);
+
+    return 0;
+}
+```
 
 ## Output
+<img width="918" height="264" alt="image" src="https://github.com/user-attachments/assets/4af11e18-2751-4517-b088-c217c3636068" />
 
 ## Result
+C program to calculate the product (factorial) of a given natural number using recursion is written.
